@@ -1,4 +1,7 @@
 
+import java.util.*;
+import iteratorPackage.*;
+
 public class Product extends ProductRecipe{
 
 	protected String name;
