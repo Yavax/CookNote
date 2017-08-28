@@ -40,6 +40,11 @@ public class Recipe extends ProductRecipe{
 	}
 	
 	@Override
+	public Iterator createIterator() {
+		return new CompositeIterator(productsList.iterator());
+	}
+	
+	@Override
 	public void print() {
 		System.out.println("Nazwa: " + name);
 		System.out.println("Przepis:" + fullRecipe);

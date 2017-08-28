@@ -32,6 +32,11 @@ public class Product extends ProductRecipe{
 	}
 	
 	@Override
+	public Iterator createIterator() {
+		return new NullIterator();
+	}
+	
+	@Override
 	public void print() {
 		System.out.println(" *" + name + " - " + quantity);
 	}
