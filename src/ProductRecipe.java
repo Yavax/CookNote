@@ -1,4 +1,6 @@
 
+import java.util.*;
+
 public abstract class ProductRecipe {
 	
 	public void add(ProductRecipe productRecipe) {
@@ -40,5 +42,7 @@ public abstract class ProductRecipe {
 	public void print() {
 		throw new UnsupportedOperationException();
 	}
+	
+	public abstract Iterator createIterator();
 
 }
