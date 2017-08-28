@@ -21,7 +21,7 @@ public abstract class ProductRecipe {
 		throw new UnsupportedOperationException();
 	}
 	
-	public void getChild(int i) {
+	public ProductRecipe getChild(int i) {
 		throw new UnsupportedOperationException();
 	}
 	
