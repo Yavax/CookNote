@@ -1,5 +1,7 @@
 package masterChef;
 
+import java.util.Iterator;
+
 public class Test {
 
 	public static void main(String[] args) {
@@ -47,6 +49,26 @@ public class Test {
 		MasterChef masterChef = new MasterChef(allRecipes);
 		
 		masterChef.printAllRecipes();
+		
+		//
+		//Test wyszukiwania konkretnego przepisu
+		//
+		Iterator iterator = allRecipes.createIterator();
+		
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("Tylko Szarlotka:");
+		System.out.println("---------------------");
+		while(iterator.hasNext()) {
+			ProductRecipe recipe = (ProductRecipe)iterator.next();
+			try {
+				if(recipe.getName()=="Szarlotka") {
+					recipe.print();
+				}
+			}catch (UnsupportedOperationException e) {}
+		}
 
 	}
 

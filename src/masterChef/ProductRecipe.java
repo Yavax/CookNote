@@ -39,11 +39,11 @@ public abstract class ProductRecipe {
 	public String getQuantity() {
 		throw new UnsupportedOperationException();
 	}
+
+	public abstract Iterator createIterator();
 	
 	public void print() {
 		throw new UnsupportedOperationException();
 	}
-	
-	public abstract Iterator createIterator();
 
 }

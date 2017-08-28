@@ -51,13 +51,14 @@ public class Recipe extends ProductRecipe{
 	public void print() {
 		System.out.println("Nazwa: " + name);
 		System.out.println("Przepis:" + fullRecipe);
-		System.out.println("-----------------------");
 		
 		Iterator<ProductRecipe> iterator = productsList.iterator();
 		while(iterator.hasNext()) {
 			ProductRecipe productRecipe = (ProductRecipe) iterator.next();
 			productRecipe.print();
 		}
+		
+		System.out.println("------------------------");
 		
 	}
 
