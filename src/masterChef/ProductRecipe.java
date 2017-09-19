@@ -1,8 +1,9 @@
 package masterChef;
 
 import java.util.*;
+import java.io.*;
 
-public abstract class ProductRecipe {
+public abstract class ProductRecipe implements Serializable {
 	
 	public void add(ProductRecipe productRecipe) {
 		throw new UnsupportedOperationException();

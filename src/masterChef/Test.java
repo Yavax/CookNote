@@ -1,6 +1,7 @@
 package masterChef;
 
 import java.util.Iterator;
+import serialization.SaveFile;
 
 public class Test {
 
@@ -69,6 +70,23 @@ public class Test {
 				}
 			}catch (UnsupportedOperationException e) {}
 		}
+		
+		
+		//
+		//Test zapisu do pliku
+		//
+		System.out.println("Zapis");
+		SaveFile.saveRecipe(allRecipes);
+		System.out.println("Zapisane");
+		
+		//
+		//Test odczytu
+		//
+		System.out.println("Odczyt");
+		ProductRecipe newAllRecipe = SaveFile.readRecipe();
+		System.out.println("Odczytane");
+		newAllRecipe.print();
+		
 
 	}
 
