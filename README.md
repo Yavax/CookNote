@@ -1,3 +1,3 @@
 # CookNote
 
-My first big app
+My first windows app
