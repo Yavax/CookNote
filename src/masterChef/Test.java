@@ -2,11 +2,15 @@ package masterChef;
 
 import java.util.Iterator;
 import serialization.SaveFile;
+import window.*;
+import java.awt.*;
+import javax.swing.*;
 
 public class Test {
 
 	public static void main(String[] args) {
 		
+		/*
 		//
 		//Create temp recipes
 		//
@@ -86,6 +90,16 @@ public class Test {
 		ProductRecipe newAllRecipe = SaveFile.readRecipe();
 		System.out.println("Odczytane");
 		newAllRecipe.print();
+		
+		*/
+		
+		EventQueue.invokeLater(new Runnable(){
+			public void run() {
+				MainWindow frame = new MainWindow();
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frame.setVisible(true);
+			}
+		});
 		
 
 	}
